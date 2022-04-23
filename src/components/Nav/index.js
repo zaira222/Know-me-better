@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-
+import Resume from '../Resume';
 
 
 function Nav(props) {
@@ -9,8 +9,8 @@ function Nav(props) {
         currentCategory,
         contactSelected,
         setContactSelected,
-        setContactSelected2
-        
+
+
         
     } = props;
 
@@ -27,26 +27,14 @@ function Nav(props) {
                 </a>
             </h2>
             <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
-                        <a data-testid="about"
-                        href="#about" onClick={()  => setContactSelected(false)}>
-                            About me
-                        </a>
-                    </li>
-                   
-                    <li className='mx-2'>
-                        <a data-testid="resume"
-                        href="#resume" onClick={() => setContactSelected2(false)}>
-                        Resume
-                        </a>
-                    </li> 
+            <ul className='flex-row'>
+                  
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                         <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
                     {categories.map((category) => (
                         <li 
-                        className={`mx-1 ${
+                        className={`mx-2 ${
                             currentCategory.name === category.name && 'navActive'
                         }`} 
                         key={category.name}>
@@ -59,7 +47,8 @@ function Nav(props) {
 
                         </li>
                     ))}
-                </ul>
+
+                    </ul>
             </nav>
         </header>
     );

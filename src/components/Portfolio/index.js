@@ -9,6 +9,8 @@ function Portfolio({currentCategory}) {
          <h1 data-testid="h1tag">{(name)}</h1>
          <p>{description}</p>
          <Project category={currentCategory.name} />
+         <a href="/">
+             </a>
      </section>
 
     );
