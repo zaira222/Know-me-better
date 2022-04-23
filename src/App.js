@@ -6,6 +6,7 @@ import ContactMe from './components/Contact';
 import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   const [categories] = useState([
@@ -37,6 +38,8 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
+      <header>
+      <Header></Header>
       <Nav
       categories={categories}
       setCurrentCategory={setCurrentCategory}
@@ -44,6 +47,7 @@ function App() {
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
       ></Nav>
+      </header>
     <main>
       {!contactSelected ? (
           <>

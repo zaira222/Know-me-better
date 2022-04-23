@@ -19,13 +19,6 @@ function Nav(props) {
     }, [currentCategory]);
     return (
         <header>
-            <h2> 
-                 Zaira Perez
-                 <a data-testid="link" href="/">
-
-                  
-                </a>
-            </h2>
             <nav>
             <ul className='flex-row'>
                   
