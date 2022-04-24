@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #011936;
-  background-color: #9FC490;
+  background-color: #ABD2FA;
 }
 
 code {
@@ -32,7 +32,7 @@ a {
 header {
   display: flex;
   flex-wrap: wrap;
-  background-color: #82A3A1;
+  background-color: #7692FF;
 }
 
 img {
