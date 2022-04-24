@@ -15,4 +15,4 @@ The following pictures shows how each different page is supposed to look like.
 ![Portfolio Page](./src/assets/cover/portfolio.jpg)
 
 ## Deployed Application
-*
+* https://zaira222.github.io/know-me-better/
