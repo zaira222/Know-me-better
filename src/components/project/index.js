@@ -6,37 +6,37 @@ const Project = ({category}) => {
             name: 'Note Taker',
             category: 'portfolio',
             description: 'It helps keep track of your ideas, plans, and class notes.',
-            link: 'https://tranquil-depths-19263.herokuapp.com/',
+            href: 'https://tranquil-depths-19263.herokuapp.com/',
         },
         {
             name: 'Course Critic',
             category: 'portfolio',
             description: 'Its a helpful site for prospective students to receive reviews from actual strudents.',
-            src: 'https://coursecritic.herokuapp.com/',
+            href: 'https://coursecritic.herokuapp.com/',
         },
         {
             name: 'Keeping Up',
             category: 'portfolio',
             description: 'Its a helpful site for customers who want to keep track of their expenses.',
-            src: 'https://protected-basin-80313.herokuapp.com/',
+            href: 'https://protected-basin-80313.herokuapp.com/',
         },
         {
             name: 'One less Step',
             category: 'portfolio',
             description: 'Its a helpful for web developers that it helps create their readme.md by answering a few questions.',
-            src: 'https://github.com/zaira222/One-less-step',
+            href: 'https://github.com/zaira222/One-less-step',
         },
         {
             name: 'finding time',
             category: 'portfolio',
             description: 'Can be used in everyday life for reminders.',
-            src: 'https://zaira222.github.io/finding-time/'
+            href: 'https://zaira222.github.io/finding-time/'
         },
         {
             name: 'future in progress',
             category: 'portfolio',
             description: 'Previous website that had my resume done with HTML and CSS.',
-            src: 'https://zaira222.github.io/future-in-progress/'
+            href: 'https://zaira222.github.io/future-in-progress/'
         },
     ]);
     
@@ -50,8 +50,11 @@ const Project = ({category}) => {
                     alt={image.name}
                     className="img-thumbnail mx-1"
                     key={image.name} 
-                    
+                    href={image.href}
 
+                    name={Project.name}
+
+                
                     />
             ))}
         </div>

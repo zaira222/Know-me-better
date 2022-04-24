@@ -59,3 +59,18 @@ h2 {
 .mx-2 {
   margin-left: 60px;
 }
+
+.navActive {
+  color: yellow;
+}
+
+img {
+  src: 'https://tranquil-depths-19263.herokuapp.com/';
+}
+
+h10 {
+  text-decoration: solid;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}

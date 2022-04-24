@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
-import Resume from '../Resume';
-
-
+import About from '../About';
 function Nav(props) {
     const {
         categories = [],
@@ -20,8 +18,8 @@ function Nav(props) {
     return (
         <header>
             <nav>
+                
             <ul className='flex-row'>
-                  
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                         <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
@@ -44,6 +42,7 @@ function Nav(props) {
                     </ul>
             </nav>
         </header>
+
     );
 }
 
