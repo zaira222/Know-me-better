@@ -3,11 +3,12 @@ import Project  from '../project';
 
 function Portfolio({currentCategory}) {
     const { name, description, example1, example2, example3, example4, example5, example6, example7,
-        example8, example9, example10, example11, example12, example13, href, src} = currentCategory;
+        example8, example9, example10, example11, example12, example13,  href, src1, download} = currentCategory;
 
     return (
      <section>
          <h1 data-testid="h1tag">{(name)}</h1>
+         <p>{download}</p>
          <h10>{description}</h10>
          <p>{example1}</p>
          <p>{example2}</p>
@@ -24,7 +25,7 @@ function Portfolio({currentCategory}) {
          <p>{example12}</p>
          <p>{example13}</p>
          <Project category={currentCategory.name} />
-         <a href={href}>
+         <a href={src1}>
              </a>
      </section>
 
